@@ -7,7 +7,7 @@ class Alumno {
         this.nota3 = nota3;
         this.nota4 = nota4;
     }
-
+/*hasta aquí hemos creado un constructor con los requisitos que nos piden*/
     promedio() {
         return (this.nota1 * 0.15) + (this.nota2 * 0.20) + (this.nota3 * 0.25) + (this.nota4 * 0.40);
     }
@@ -21,6 +21,8 @@ class Alumno {
         const promedio = this.promedio();
         return promedio > 17 ? 'Mochila' : 'Sin obsequio';
     }
+
+    /*luego hemos creado todas las condiciones que nos piden*/
 }
 
 document.getElementById('alumnoForm').addEventListener('submit', function(event) {
@@ -38,4 +40,5 @@ document.getElementById('alumnoForm').addEventListener('submit', function(event)
     document.getElementById('promedio').textContent = `Promedio: ${alumno.promedio().toFixed(2)}`;
     document.getElementById('condicion').textContent = `Condición: ${alumno.condicion()}`;
     document.getElementById('obsequio').textContent = `Obsequio: ${alumno.obsequio()}`;
+    /*hasta aqui hemos dado funcionalidad al formulario para calcular los proemdios con las condiciones que tenemos*/
 });

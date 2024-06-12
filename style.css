@@ -1,0 +1,11 @@
+.container{
+    background-color: rgb(151, 183, 243);
+    border-radius: 5px;
+    box-shadow: 10px 10px 12px rgb(125,135,325);
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
