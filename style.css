@@ -1,7 +1,11 @@
+body{
+    background-color: beige;
+}
 .container{
-    background-color: rgb(151, 183, 243);
+    width: 80vh;
+    background-color: rgb(216, 234, 127);
     border-radius: 5px;
-    box-shadow: 10px 10px 12px rgb(125,135,325);
+    box-shadow: 10px 10px 12px rgba(77, 80, 56, 0.293);
 }
 
 h1{
