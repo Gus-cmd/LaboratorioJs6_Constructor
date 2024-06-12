@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Notas de Alumnos</title>
+    <!-- Enlazar Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Registro de Notas de Alumnos</h1>
+        <form id="alumnoForm">
+            <!-- Código -->
+            <div class="mb-3">
+                <label for="codigo" class="form-label">Código</label>
+                <input type="text" class="form-control" id="codigo" placeholder="Ingrese el código del alumno" required>
+            </div>
+            <!-- Nombre -->
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del alumno" required>
+            </div>
+            <!-- Nota 1 -->
+            <div class="mb-3">
+                <label for="nota1" class="form-label">Nota 1</label>
+                <input type="number" class="form-control" id="nota1" placeholder="Ingrese la nota 1" min="0" max="20" required>
+            </div>
+            <!-- Nota 2 -->
+            <div class="mb-3">
+                <label for="nota2" class="form-label">Nota 2</label>
+                <input type="number" class="form-control" id="nota2" placeholder="Ingrese la nota 2" min="0" max="20" required>
+            </div>
+            <!-- Nota 3 -->
+            <div class="mb-3">
+                <label for="nota3" class="form-label">Nota 3</label>
+                <input type="number" class="form-control" id="nota3" placeholder="Ingrese la nota 3" min="0" max="20" required>
+            </div>
+            <!-- Nota 4 -->
+            <div class="mb-3">
+                <label for="nota4" class="form-label">Nota 4</label>
+                <input type="number" class="form-control" id="nota4" placeholder="Ingrese la nota 4" min="0" max="20" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+        <div id="resultados" class="mt-4">
+            <h3>Resultados</h3>
+            <p id="promedio"></p>
+            <p id="condicion"></p>
+            <p id="obsequio"></p>
+        </div>
+    </div>
+
+    <!-- Enlazar Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="alumno.js"></script>
+</body>
+</html>
